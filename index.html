@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management Crud</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Student Management System</title>
+      <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      <div class="main">
+      <h3 >Student Management CRUD</h3>
+       <br>
+      <!-- Form for adding/editing students -->
+       <form id="studentForm">
+        <input type="hidden" name="studentID">
+        
+        <div class="form-row">
+          <div class="input-group">
+             <label for="name"> Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div> 
+          
+          <div class="input-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          
+          <div class="input-group">
+            <label for="grade">GPA:</label>
+            <input type="text" id="grade" name="grade" required>
+          </div>
+        </div>
+        
+        <div class="form-row">
+          <div class="input-group">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+          </div>
+          
+          <div class="input-group">
+            <label for="degree">Degree:</label>
+            <input type="text" id="degree" name="degree" required>
+          </div>
+        </div>
+        
+        <button type="submit" id="submitBtn">Add Student</button>
+      </form>
+       <br>
+       <br>
+      <!-- Search box -->
+      <input type="text" id="searchInput" placeholder="Search by name, email, or degree">
+    
+      <!-- Table to display student list -->
+      <table id="studentTable" border="1">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Age</th>
+            <th>GPA</th>
+            <th>Degree </th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Student rows will be added here using JavaScript -->
+        </tbody>
+      </table>
+    </div>
+      <script src="script.js"></script>
+    </body>
+    </html>
+  
